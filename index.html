@@ -68,7 +68,19 @@ img { max-width:100%; display:block; }
 .hero-ctas { display:flex; gap:14px; margin-top:30px; position:relative; z-index:1; flex-wrap:wrap; justify-content:center; }
 .btn { padding:12px 26px; border-radius:3px; font-weight:600; font-size:13.5px; text-decoration:none; letter-spacing:.3px; }
 .btn-gold { background:var(--gold); color:var(--burgundy-dark); }
-.btn-outline { border:1px solid var(--gold-light); color:#fff; }
+.btn-outline { background:var(--paper); color:var(--burgundy-dark); border:1px solid var(--paper); }
+
+/* ---- brochure downloads ---- */
+.brochures { background:var(--paper); padding:26px 24px; border-bottom:1px solid var(--line); }
+.brochures-wrap { max-width:720px; margin:0 auto; text-align:center; }
+.brochures-label { font-weight:600; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--ink-soft); margin-bottom:14px; }
+.brochure-links { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+.brochure-btn { display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border-radius:30px;
+  border:1.5px solid var(--burgundy); color:var(--burgundy); font-weight:600; font-size:13.5px;
+  text-decoration:none; background:#fff; transition:background .15s, color .15s; }
+.brochure-btn:hover { background:var(--burgundy); color:#fff; }
+.brochure-btn svg { width:14px; height:14px; flex:0 0 auto; }
+.brochure-btn .bsub { font-size:10.5px; opacity:.65; font-weight:500; margin-left:1px; }
 
 /* ---- sections ---- */
 section { padding:72px 24px; }
@@ -197,6 +209,22 @@ footer { text-align:center; padding:22px; font-size:11px; letter-spacing:1.5px; 
     </div>
   </div>
 </div>
+
+<section class="brochures" id="brochures">
+  <div class="brochures-wrap">
+    <div class="brochures-label">Downloadable Resources</div>
+    <div class="brochure-links">
+      <a class="brochure-btn" href="us-freight-forwarders.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+        US Freight Forwarders <span class="bsub">(PDF)</span>
+      </a>
+      <a class="brochure-btn" href="vietnam-freight-forwarders.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+        Vietnam Freight Forwarders <span class="bsub">(PDF)</span>
+      </a>
+    </div>
+  </div>
+</section>
 
 <section class="why" id="why">
   <div class="wrap">
@@ -617,6 +645,7 @@ footer { text-align:center; padding:22px; font-size:11px; letter-spacing:1.5px; 
       <div class="contact-item"><div class="label">Email</div><a class="val" href="mailto:info@proxiglobe.com">info@proxiglobe.com</a></div>
       <div class="contact-item"><div class="label">Phone / WhatsApp</div><a class="val" href="tel:+84.949.954.235">+84.949.954.235</a></div>
       <div class="contact-item"><div class="label">Office</div><div class="val">Ho Chi Minh City, Vietnam</div></div>
+      <div class="contact-item"><div class="label">Website</div><a class="val" href="https://www.proxiglobe.com" target="_blank" rel="noopener">www.proxiglobe.com</a></div>
     </div>
   </div>
 </section>
